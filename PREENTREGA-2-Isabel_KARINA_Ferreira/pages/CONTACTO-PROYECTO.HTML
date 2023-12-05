@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+     <!-- LINK PARA LA HOJA DE CSS PARA LOS ESTILOS-->
+  <link rel="stylesheet" href="../Css/Style.css">
+
+  <title>Proyecto CROCHET-Contacto</title> <!-- TITULO DEL PROYECTO, VA EN LA PESTAÑA DEL NAVEGADOR--> 
+
+</head>
+
+<body class="FONDO">
+
+   <!-- CABECERA--><!-- para contener a lo que es el banner principal header-->
+   <header> 
+
+       <!--LOGO DE LA PAGINA-->
+       <section class="Logo">
+           
+           <img src="../Img/logo-ovillo-lana.png" alt="Logo de Proyecto CROCHET" width="150" height="150">
+       
+           <!-- TITULO PRINCIPAL DE LA PAGINA-->
+           <h1>CREACIONES EN CROCHET</h1>
+   
+       </section>
+
+       <!--SECCION NAVEGABLE DE LAS PAGINAS-->
+       <section class="VOLVER" id="VOLVER"> <!-- VINCULO PARA VOLVER AL PRINCIPIO-->        
+
+           <nav> <!--SECCION DE LINK PARA IR A OTRAS PAGINAS-->
+               <ul><!--LISTA NAVEGABLE PARA LAS PAGINAS QUE ESTAN CONTENIDAS-->
+                   <li>
+                       <!-- ENLACES ABSOLUTOS "a"-->
+                       <a href="../index.html">HOME</a> <!--LINK PARA PAGINA PRINCIPAL-->
+                   </li>
+                    <li>
+                        <a href="../pages/PRODUCTOS-PROYECTO.HTML">PRODUCTOS</a><!-- LINK PARA PAGINA DE PRODUCTOS-->
+                    </li> 
+                    <li>
+                        <a href="../pages/VIDEOS-PROYECTO.HTML">VIDEOS</a><!--LINK PARA PAGINA DE VIDEOS-->
+                    </li>
+                    <li>
+                        <a href="../pages/TUTORIALES-PROYECTO.HTML">TUTORIALES</a><!--LINK PARA PAGINA DE TUTORIALES-->
+                    </li>
+                       
+               </ul>
+           </nav>
+       </section>
+   </header>
+
+   <!-- etiqueta para el contenido principal -->
+   <main>
+
+       <!--Formulario para completar "EN CONSTRUCCION"-->
+       <form action="FORM.PHP" method="post" accept-charset="UTF-8">
+            <fieldset class="Datos">
+                <legend>Datos de contacto</legend>
+                    <ul>
+                        <li>
+                            <label>Nombre y Apellido</label>
+                            <input type="text" name="nombre" placeholder="Por Ej. Juan Perez"></input>
+                        </li>
+                        <li>
+                            <label>Teléfono</label>
+                            <input type= "number" name="number" placeholder="Por Ej.+54 111253456"></input>
+                        </li>
+                        <li>
+                            <textarea name="Comentario" id="" cols="20" rows="10" >Comentario...</textarea>
+                            
+                        </li>
+                    </ul>
+                    <input type="button" value="Enviar" class="Boton-Enviar">
+            </fieldset>
+       </form>
+
+   </main>
+
+   <!--PIE DE PAGINA-->
+   <footer> 
+       <section class="Redes"> <!--SECCION PARA LOS LINKS DE REDES-->
+
+           <a href="https://www.facebook.com/?locale=es_LA" target="_blank">
+               <img src="../Img/icon-facebook.png" alt="Icono Facebook" width="25" height="25">
+           </a>
+           <a href="https://www.instagram.com/" target="_blank">
+               <img src="../Img/icon-instagram.png" alt="Icono instagram" width="25" height="25">
+           </a>
+           <a href="https://twitter.com/?lang=es" target="_blank">
+               <img src="../Img/icon-twiter.png" alt="Icono twitter" width="25" height="25">
+           </a>
+           <a href="https://ar.pinterest.com/" target="_blank">
+               <img src="../Img/icon-pinterest.png" alt="Icono pinterest" width="25" height="25">
+           </a>
+
+       </section>
+
+      
+        <section class="Volver-arriba">
+            
+            <a href="#VOLVER"> <!-- ENLACE INTERNO PARA VOLVER AL PRINCIPIO-->
+                <mark>Volver Arriba</mark>
+            </a>
+        
+            <p> <small>Todos los derechos reservados 2023</small></p>
+
+        </section>
+       
+   </footer>
+
+</body>
+</html>
+    

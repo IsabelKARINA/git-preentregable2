@@ -1,0 +1,220 @@
+/*RESET*/
+   /*con estas propiedades se va a tener un margen inicial cero en todas las paginas*/ 
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+/*Estilo para el fondo de pantalla*/
+/*BODY*/
+    .FONDO {
+        background-color:beige;
+        background-image:url(../Img/img-fondo.webp);
+        background-attachment: fixed;
+    }       
+
+/*HEADER*/
+   
+    /*MARGENES LOGO DE LA PAGINA*/
+
+        .Logo{     
+           
+            display:flex; /*con esta propiedad el texto y el logo quedan dentro de border*/
+            flex-wrap: wrap;
+            padding: 30px;
+            border-style: double;
+            margin: 50px;   
+            justify-content: center; 
+            align-items: center;
+            background-color:aquamarine;
+        }
+        
+    /*Estilo titulo de cabecera*/        
+        .Logo h1{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 200%;
+            font-style:italic;
+            text-align: justify;
+            color:rgb(123, 20, 220);
+        }
+
+    /*seccion navegable*/
+    /*MARGENES NAVEGABLES*/
+        .VOLVER{
+            display: flex;
+            flex-wrap: wrap;
+            padding: 10px;
+            border-style: groove;
+            border-color: rgb(111, 71, 255);
+            background-color: bisque;
+            margin: 50px ;
+            justify-content: center;
+            
+        }
+
+    /*ESTILO DE LOS NAVEGABLES*/
+        .VOLVER nav ul{
+            list-style: none;
+            display:flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            font-weight:bolder;
+            font-size:20px;
+          
+        }
+        /*CAMBIO DE COLOR AL PASAR EL MOUSE*/
+        .VOLVER nav ul a:hover{
+            background: greenyellow;
+            color:blue;
+            text-decoration: wavy;
+            cursor:pointer;
+        }
+     
+/*MAIN*/
+    main{
+        margin: 50px;
+    }
+    /*SUBTITULO DE PAGINA PRINCIPAL-ESTILO*/
+    .Nuestro-sueño{  
+        height: 40vh;
+        display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 20% repeat(3,10%) 0.2fr;
+            row-gap: 5%;
+            justify-content: center;
+            align-items: center;       
+        font-style:oblique;       
+       
+    }
+    /*PARRAFO DE BIENVENIDA-TITULO*/
+    .Nuestro-sueño h2{
+        text-decoration: underline; 
+        font-size: 200%;
+        font-weight: 700; /*grosor de la letra*/   
+        text-align: center;
+    }
+    /*PARRAFO DE BIENVENIDA*/
+    .Nuestro-sueño p{
+        font-weight: bold;
+        text-align: center;
+    }
+
+    /*IMAGEN DE MITAD DE PAGINA*/
+    main .Nuestro-sueño img{
+        border-width: 30px;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+/*FOOTER*/
+    footer {    
+        
+        background-color: rgb(212, 177, 244);
+        
+    }
+/*------------------------------------------------------------------------------------------------*/
+
+/*mq de tablet*/
+@media screen and (min-width: 600px){
+    header{
+        background-color:aquamarine;  
+        flex-direction: row;
+    }
+        .Logo{
+            border-style: dashed;
+            background-image: url(../Img/img-oveja-header.jpg);
+            color: blue;
+
+        }
+        .Logo h1{
+            color:rgb(13, 10, 12);
+            font-size: 4rem;
+        }
+ 
+    main .Nuestro-sueño{
+        font-size: 130%;
+    }
+        main .Nuestro-sueño img{
+            grid-row:span 2;
+        
+        }
+    footer{
+        margin-bottom: 0.5rem;
+    }
+}
+
+/*mq de DESKTOP*/
+@media screen and (min-width: 1024px){
+    header{
+        background-color:rgb(222, 145, 207);  
+        flex-direction: row;
+    }
+    main{
+        grid-template-columns: 1fr;
+        grid-template-rows:2rem 5rem;
+        row-gap: 0%;
+    }
+    main .Nuestro-sueño{
+        font-size: 150%;
+    }
+}
+/*------------------------------------------------------------------------------------------------*/
+/*color de las letras de los productos en el Carousel*/
+main div .carousel-inner h5{
+    color:chartreuse;
+}
+
+
+/*------------------------------------------------------------------------------------------------*/
+/*para todas las paginas en construcción*/
+.construcción{
+    background-color: deeppink;
+}
+.Redes{
+    text-align:center;
+}
+
+.Volver-arriba{
+    text-align: right;
+    margin-right: 20px;
+      
+}
+/*------------------------------------------------------------------------------------------------*/
+/*PAGINA PRODUCTOS*/
+
+/*------------------------------------------------------------------------------------------------*/
+/*PAGINA CONTACTO*/
+    form {
+        display: flex;
+        margin: 20px;
+        padding: 10px;
+        justify-content: center;
+    }
+    .Datos{
+        background-color:antiquewhite ;
+       
+    }
+    /*ESTILO DE LOS ROTULOS*/
+    form ul li{
+        list-style: none;
+        display: flex;
+        margin: 10px;
+        gap:10px;
+    }
+
+    form ul li textarea{
+        width: 500px;
+        height: 100px;
+        resize: none;
+    }
+
+    .Boton-Enviar{
+        color: rgb(0, 255, 42);
+        background-color: blue;     
+        cursor:pointer;
+        float: right;
+        margin: 10px;
+    }
+  
